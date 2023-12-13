@@ -10,7 +10,7 @@ export class CdkdemoStack extends cdk.Stack {
     // The code that defines your stack goes here
 
     //AWS CI-CD
-    const democicdpipeline = new CodePipeline(this, 'democicdpipeline',{
+    const democicdpipeline = new CodePipeline(this, 'demopipeline',{
       synth: new ShellStep('Synth', {
         // Use a connection created using the AWS console to authenticate to GitHub
         // Other sources are available.
